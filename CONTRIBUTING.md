@@ -15,7 +15,6 @@
 ### Code Style
 * Use 4 spaces for indentation
 * Use camelCase for variable names
-* Use PascalCase for class names
 
 
 
