@@ -3,6 +3,8 @@ const connectDB = require('./config/connectDB');
 const dotenv = require("dotenv").config();
 const bodyParser = require("body-parser");
 const userRoutes = require("./routes/userRoute");
+const cors = require("cors")
+const errorHandler = require("./middleWare/errorMiddleware")
 
 
 const app = express();
@@ -13,11 +15,11 @@ app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(userRoutes);
+app.use(errorHandler);
 
 app.get("/", (req, res) => {
     res.send("Briteemah Inventory Management System");
 })
-
 
 
 const startServer = async () => {
