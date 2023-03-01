@@ -5,6 +5,7 @@ const bodyParser = require("body-parser");
 const userRoutes = require("./routes/userRoute");
 const cors = require("cors")
 const errorHandler = require("./middleWare/errorMiddleware")
+const cookieParser = require("cookie-parser");
 
 
 const app = express();
@@ -16,6 +17,7 @@ app.use(express.urlencoded({extended: false}));
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(userRoutes);
 app.use(errorHandler);
+app.use(cookieParser);
 
 app.get("/", (req, res) => {
     res.send("Briteemah Inventory Management System");
