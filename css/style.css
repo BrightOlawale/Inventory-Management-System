@@ -247,32 +247,13 @@ div.socials{
 	text-align: center;
 	padding: 70px 0 40px 0px;
 }
-h3.socialHeader{
-	font-size: 30px;
-}
-p.socialText{
-	margin-top: 20px;
-	margin-bottom: 25px;
-	color:#848484;
-	font-size: 20px;
-}
-div.socialIconsContainer a{
-	font-size: 23px;
-	height: 50px;
-	width:50px;
-	display: inline-block;
-	padding-top: 7px;
-	background: #d4d4d4;
-	border-radius: 50%;
-	color: #fff;
-	margin-left:20px;
-}
+
 div.socialIconsContainer a:hover{
 	background: #f8a4b9;
 	transition: 0.3s all;
 }
 div.footer{
-	background: #e3e3e3;
+	background: teal;
 	padding-top: 50px;
 	padding-bottom: 50px;
 	text-align: center;
@@ -284,7 +265,7 @@ div.footer a{
 }
 div.footer a:hover{
 	font-weight: bold;
-	color: #f8a4b9;
+	color: white;
 	transition: 0.5s all;
 }
 
