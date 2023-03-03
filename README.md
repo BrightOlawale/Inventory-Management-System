@@ -1,3 +1,3 @@
-# Briteema Inventory Managemet System
+# Briteema Inventory Management System
 
 ## Project Overview
