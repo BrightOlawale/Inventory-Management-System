@@ -11,17 +11,18 @@ const cookieParser = require("cookie-parser");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-//Middleware
-app.use(express.json());
-app.use(express.urlencoded({extended: false}));
-app.use(bodyParser.urlencoded({extended: true}));
-app.use(userRoutes);
-app.use(errorHandler);
-app.use(cookieParser);
 
 app.get("/", (req, res) => {
-    res.send("Briteemah Inventory Management System");
+  res.send("Briteemah Inventory Management System");
 })
+
+//Middleware
+app.use(express.json());
+// app.use(express.urlencoded({extended: false}));
+app.use(bodyParser.urlencoded({extended: true}));
+app.use("/api/users", userRoutes);
+app.use(errorHandler);
+app.use(cookieParser);
 
 
 const startServer = async () => {
