@@ -3,6 +3,7 @@ const connectDB = require('./config/connectDB');
 const dotenv = require("dotenv").config();
 const bodyParser = require("body-parser");
 const userRoutes = require("./routes/userRoute");
+const productRoutes = require("./routes/productRoute");
 const cors = require("cors")
 const errorHandler = require("./middleWare/errorMiddleware")
 const cookieParser = require("cookie-parser");
@@ -20,9 +21,13 @@ app.get("/", (req, res) => {
 app.use(express.json());
 // app.use(express.urlencoded({extended: false}));
 app.use(bodyParser.urlencoded({extended: true}));
-app.use("/api/users", userRoutes);
 app.use(errorHandler);
-app.use(cookieParser);
+app.use(cookieParser());
+
+app.use("/api/users", userRoutes);
+app.use("/api/products", productRoutes);
+
+
 
 
 const startServer = async () => {
