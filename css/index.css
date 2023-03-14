@@ -1,0 +1,196 @@
+*,*::before,*::after{box-sizing:border-box}ul[class],ol[class]{padding:0}body,h1,h2,h3,h4,p,ul[class],ol[class],figure,blockquote,dl,dd{margin:0}body{min-height:100vh;scroll-behavior:smooth;text-rendering:optimizeSpeed;line-height:1.5}ul[class],ol[class]{list-style:none}a:not([class]){text-decoration-skip-ink:auto}img{max-width:100%;display:block}article>*+*{margin-top:1em}input,button,textarea,select{font:inherit}img:not([alt]){filter:blur(10px)}@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important;scroll-behavior:auto !important}}
+
+body{	
+	font-family: arial;
+}
+
+div.loginButtonContainer button{
+	font-size: 20px;
+	padding: 10px 40px;
+	background: #f685a2;
+	border:none;
+	color: #fff;
+    text-align: right;
+}
+
+
+div.header{
+	width:100%;
+	background: teal;
+	padding:10px 0px;
+	text-align: right;
+}
+div.header a{
+	font-size: 20px;
+	color:#fff;
+	padding: 5px 10px;
+	text-decoration: none;
+	border:2px solid transparent;
+	border-bottom: 2px solid #fff;
+}
+div.header a:hover{
+
+	border-radius: 5px;
+	border:2px solid #fff;
+}
+div.banner{
+	background: url('../images/fatima\ \(2\).jpg') no-repeat center center fixed;
+	background-size: cover;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	height: 100vh;
+}
+div.homepageContainer{
+	width:100%;
+	max-width: 1000px;
+	margin: 0 auto;
+	color: #000;
+}
+div.bannerHeader h1{
+	font-size: 100px;
+	color: black;	
+	line-height: 100%;
+	font-family: 'Playfair Display', serif;
+    text-align: center;
+    margin: 0 auto;
+}
+div.bannerHeader p{
+	font-size: 40px;
+	color: black;	
+	text-transform: uppercase;
+	line-height: 100%;
+	font-family: 'Playfair Display', serif;
+    text-align: center;
+    margin: 0 auto;
+}
+p.bannerTagline{
+	margin-top:20px;
+	font-size: 25px;
+	color:#000;
+	font-family: 'Playfair Display', serif;
+    text-align: center;
+    margin: 0 auto;
+}
+div.bannerIcons{
+	margin-top:150px;
+}
+div.bannerIcons a{
+    font-size: 23px;
+    margin-left: 40px;
+    padding: 7px 15px;
+    background: rgba(0, 0, 0, 5);
+    color: rgb(24, 254, 254);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+div.bannerIcons a:first-child{
+	margin-left: 0px;
+}
+div.bannerIcons a:hover{
+	color: #fff;
+	font-size: 25px;
+	background: #f685a1;
+	transition: .5s all;
+}
+
+div.homepageFeatures{
+	display: flex;
+	flex-direction: row;
+	padding: 50px 0px;
+}
+div.homepageFeature{
+	padding:10px 20px;
+	text-align: center;
+	width:33.33%;
+}
+div.homepageFeature:hover{
+	border-top: 2px solid #f8a4b9;
+	border-bottom: 2px solid #f8a4b9;
+	transition: 0.5s all;
+}
+div.homepageFeature span.featureIcon{
+	height: 80px;
+	width:80px;
+	display: inline-block;
+	font-size:50px;
+	background: #f685a1;
+	color:#fff;
+	padding-top: 5px;
+	border-radius: 50%;
+	margin-bottom: 20px;
+}
+div.homepageFeature h3.featureTitle{
+	margin-bottom: 20px;
+	font-size: 23px;
+}
+div.homepageFeature p.featureDescription{
+	color: #848484;
+	font-size: 18px;
+}
+div.homepageNotified{
+	background: #e3e3e3;
+	padding:80px 0px;
+}
+div.homepageNotifiedContainer{	
+	display: flex;
+	flex-direction: row;
+}
+div.emailForm h3{
+	font-size: 25px;
+}
+div.emailForm{
+	width:40%;
+}
+div.homepageNotified h3{
+	margin-bottom: 20px;
+}
+div.homepageNotified p{
+	color: #848484;
+	line-height: 200%;
+	margin-bottom: 30px;
+}
+div.formContainer{
+	width: 80%;	
+	position: relative;
+}
+div.formContainer input{
+	width:100%;
+	padding:15px 10px;
+	border-radius: 15px;
+	border: none;
+}
+div.formContainer input:focus{
+	outline: none;
+}
+div.formContainer button{	
+	position: absolute;
+	right:0;
+	top:0;
+	height: 100%;
+	font-size: 22px;
+	padding: 0px 10px;
+	background: #f685a1;
+	border: none;
+	color: #fff;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+
+div.footer{
+	background: teal;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;
+}
+div.footer a{
+	color: black;
+	margin-left: 30px;
+	text-decoration: none;
+}
+div.footer a:hover{
+	font-weight: bold;
+	color: white;
+	transition: 0.5s all;
+}
